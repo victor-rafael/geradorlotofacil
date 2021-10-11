@@ -63,7 +63,7 @@ header .container {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 .numbers {
     width: 200px;
@@ -75,6 +75,10 @@ header .container {
     text-align: justify;
     border-radius: 10px;
     word-spacing: 16px;
+}
+.numbers:hover {
+    background-color: rgb(109, 107, 107);
+    color: #FFF;
 }
 select {
     width: 50px;
@@ -99,37 +103,76 @@ footer {
 
 
 
-@media (min-width: 375px) and (max-width:770px) {
+@media (min-width: 426px) and (max-width:770px) {
     header .container {
         font-size: 20px;
     }
     .buttonNumbers {
         font-size: 31px;
     }
+    .lottery {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .numbers {
-        width: 350px;
-        font-size: 14px;
+        width: 200px;
+        height: 100px;
+        font-size: 16px;
+        word-spacing: 23px;
+        line-height: 25px;
+        border-bottom: 1px solid #000;
     }
 }
 
-@media (max-width:374px) {
-    header {
-        width: 100vw;
-    }
+@media (min-width:375px) and (max-width:425px) {
     header .container {
-        font-size: 15px;
+        font-size: 20px;
     }
     .buttonNumbers {
         font-size: 31px;
     }
-    .qtdGames {
-        font-size: 18px;
-    }
-    .qtdNumbers {
-        font-size: 18px;
+    .lottery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
     }
     .numbers {
-        width: 290px;
-        font-size: 13px;
+        width: 200px;
+        height: 100px;
+        font-size: 16px;
+        word-spacing: 23px;
+        line-height: 25px;
+        border-bottom: 1px solid #000;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:374px) {
+    header .container {
+        font-size: 16px;
+    }
+    .buttonNumbers {
+        font-size: 25px;
+    }
+    .qtdGames {
+        font-size: 17px;
+    }
+    .qtdNumbers {
+        font-size: 17px;
+    }
+    .lottery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .numbers {
+        width: 200px;
+        height: 100px;
+        font-size: 16px;
+        word-spacing: 23px;
+        line-height: 25px;
+        border-bottom: 1px solid #000;
+    }
+    footer {
+        font-size: 10px;
     }
 }
