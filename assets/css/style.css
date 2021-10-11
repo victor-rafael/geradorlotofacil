@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: blue;
+    color: #FFF;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .container {
+    align-items: center;
+    font-size: 25px;
+    background-color: blueviol;
+}
+
+/*SECTION*/
+.numbersGenerate {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonNumbers {
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: green;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px;
+    color: #FFF;
+}
+.qtdGames {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.qtdNumbers {
+    margin-top: 4px;
+    font-size: 20px;
+}
+.lottery {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.numbers {
+    width: 500px;
+    background-color: #CCC;
+    margin: 5px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 20px;
+    height: 50px;
+    background-color: rgb(19, 18, 18);
+    color: #FFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+@media (min-width: 375px) and (max-width:770px) {
+    header .container {
+        font-size: 20px;
+    }
+    .buttonNumbers {
+        font-size: 31px;
+    }
+    .numbers {
+        width: 350px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:374px) {
+    header {
+        width: 100vw;
+    }
+    header .container {
+        font-size: 15px;
+    }
+    .buttonNumbers {
+        font-size: 31px;
+    }
+    .qtdGames {
+        font-size: 18px;
+    }
+    .qtdNumbers {
+        font-size: 18px;
+    }
+    .numbers {
+        width: 290px;
+        font-size: 13px;
+    }
+}
