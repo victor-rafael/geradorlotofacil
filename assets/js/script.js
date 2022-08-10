@@ -1,5 +1,5 @@
 /*VARIABLES*/
-let buttonNumbers = document.querySelector('.buttonNumbers');
+const buttonNumbers = document.querySelector('.buttonNumbers');
 let numbers;
 
 
@@ -9,20 +9,20 @@ buttonNumbers.addEventListener('click', generate);
 
 /*FUNCTIONS*/
 function generate() {
-    let value = document.querySelector('.game');
-    let qtdJogos = value.options[value.selectedIndex].value;
+    const value = document.querySelector('.game');
+    const qtdJogos = value.options[value.selectedIndex].value;
 
     document.querySelector('.lottery').innerHTML = '';
 
     for(let i = 0; i < qtdJogos; i++) {
-        console.log(generate1());
+        generate1();
     }
 }
 
 function generate1() {
     numbers = [];
-    let value2 = document.querySelector('.gameNumbers')
-    let qtdNumbers = value2.options[value2.selectedIndex].value
+    const value2 = document.querySelector('.gameNumbers')
+    const qtdNumbers = value2.options[value2.selectedIndex].value
 
     for(let i = 0; i < qtdNumbers; i++) {
         let temp = Math.round(Math.random() * (25 - 1) + 1);
@@ -33,7 +33,7 @@ function generate1() {
 }
 
 function transformNumberString() {
-    let numbersString = numbers.map(function(item) {
+    const numbersString = numbers.map(function(item) {
         return item < 10 ? '0'+item : item;
     }).sort().join(' ');
 
